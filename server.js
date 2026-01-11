@@ -7,12 +7,10 @@ const app = express();
 app.use(express.static(path.join(__dirname, '.')));
 
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'dashboard', 'index.html'));
+  res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-app.get('/social-media', (req, res) => {
-  res.sendFile(path.join(__dirname, 'social-media', 'index.html'));
-});
+
 
 app.get('/api/blogs', async (req, res) => {
   try {
