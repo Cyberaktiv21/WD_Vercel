@@ -1,0 +1,6 @@
+services:
+  social_media_webapp:
+    build: .
+    ports:
+      - "1000:1000"
+    restart: unless-stopped
